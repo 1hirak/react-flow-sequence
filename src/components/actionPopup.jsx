@@ -23,12 +23,12 @@ export default function ActionPopup({ handleClose, dispatch }) {
 
   if (!isOpen) {
     return (
-      <Button
+      <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-700 transition-colors"
       >
         Open Actions
-      </Button>
+      </button>
     );
   }
 
@@ -145,6 +145,7 @@ export default function ActionPopup({ handleClose, dispatch }) {
                   id="title"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Email title"
+                  autoComplete="off"
                   onChange={(e) =>
                     localDispatch({
                       type: "email",
@@ -166,6 +167,7 @@ export default function ActionPopup({ handleClose, dispatch }) {
                   id="subject"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Subject line"
+                  autoComplete="off"
                   onChange={(e) =>
                     localDispatch({
                       type: "email",
@@ -187,6 +189,7 @@ export default function ActionPopup({ handleClose, dispatch }) {
                   rows={5}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Write your email here..."
+                  autoComplete="off"
                   onChange={(e) =>
                     localDispatch({
                       type: "email",

@@ -144,7 +144,7 @@ function Flow() {
           border: "1px solid #ddd",
           display: "flex",
           justifyContent: "center", 
-          alignItems: "center", // Center vertically
+          alignItems: "center",
         },
       },
     ]);
